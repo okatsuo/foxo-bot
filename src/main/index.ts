@@ -13,7 +13,6 @@ client.on('messageCreate', async (msg) => {
         message: msg.content,
         image_url: attachment.url
       }
-
       console.log('object to save...', item)
       return item
     })
