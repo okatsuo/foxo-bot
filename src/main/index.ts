@@ -9,7 +9,7 @@ const client = new Client({
 client.on('messageCreate', async (msg) => {
   if (msg.attachments.size > 0) {
     msg.attachments.forEach((attachment) => {
-      const item = { // TODO: need an ID
+      const item = { // TODO: need an ID, maybe the randonUUID from crypto native lib
         message: msg.content,
         image_url: attachment.url
       }
